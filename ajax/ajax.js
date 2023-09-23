@@ -76,7 +76,38 @@ $('#sendMessageBtn').on('click', () => {
     const number = $('#numberMessage').val().replaceAll(' ', '');
     const text = $('#textMessage').val();
 
-    if(name.length() < 4 || name.length() > 20){
-        
+    const error = $('#messageError');
+
+    error.text('')
+
+    if(name.length < 4 || name.length > 20){
+        error.text('Введите настоящее имя')
+    }
+    else if(number.length < 6 || number.length > 15){
+        error.text('Введите настоящий номер')
+    }
+    else if(text.length < 25){
+        error.text('Введите сообщение более 25 символов')
+    }
+    else{
+        $.ajax({
+            url: 'ajax/sendMessage.php',
+            type: 'POST',
+            cache: false,
+            data: {
+                'name': name,
+                'number': number,
+                'text': text,
+            },
+            dataType: 'html',
+            beforeSend: function(){
+                error.css('color', 'yellow')
+                error.text('Происходит отправка')
+            },
+            success: function(){
+                error.css('color', 'green')
+                error.text('Данные успешно отправлены!');
+            },
+        })
     }
 })

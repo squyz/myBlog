@@ -123,7 +123,7 @@ session_start();
                         <input type="text" placeholder='Ваш номер' id='numberMessage'>
                     </div>
                     <textarea name="" id="textMessage">Сообщение</textarea>
-                    <span class="messageError">hell!</span>
+                    <span class="messageError" id='messageError'></span>
                     <button type='button' class='form-button' id='sendMessageBtn'>Отправить</button>
                 </form>
             </div>

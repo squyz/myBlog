@@ -303,6 +303,11 @@
                     cursor: pointer;
                 }
             }
+            .messageError{
+                align-self: flex-start;
+                color: red;
+                font-size: 12px;
+            }
         }
     }
 }
@@ -449,10 +454,6 @@
                 }
                 textarea{
                     width: calc(100% - 40px);
-                }
-                .messageError{
-                    color: red;
-                    font-size: 24px;
                 }
             }
         }

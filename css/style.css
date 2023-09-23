@@ -313,6 +313,11 @@
   background-color: rgba(52, 84, 122, 0.8);
   cursor: pointer;
 }
+.footer-form .footer-form-content form .messageError {
+  align-self: flex-start;
+  color: red;
+  font-size: 12px;
+}
 
 .footer {
   width: 100%;
@@ -428,9 +433,5 @@
   }
   .footer-form .footer-form-content form textarea {
     width: calc(100% - 40px);
-  }
-  .footer-form .footer-form-content form .messageError {
-    color: red;
-    font-size: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
