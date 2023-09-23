@@ -119,11 +119,12 @@ session_start();
                 <span class='footer-form-content'>Если вы заинтересованы моими услугами, можете то оставьте свои контакты ниже. Я лично свяжусь с Вами в ВК</span>
                 <form action="post">
                     <div class="form-input">
-                        <input type="text" placeholder='Ваше имя'>
-                        <input type="text" placeholder='Ваш номер'>
+                        <input type="text" placeholder='Ваше имя' id='nameMessage'>
+                        <input type="text" placeholder='Ваш номер' id='numberMessage'>
                     </div>
-                    <textarea name="" id="">Сообщение</textarea>
-                    <button class='form-button'>Отправить</button>
+                    <textarea name="" id="textMessage">Сообщение</textarea>
+                    <span class="messageError">hell!</span>
+                    <button type='button' class='form-button' id='sendMessageBtn'>Отправить</button>
                 </form>
             </div>
         </div>

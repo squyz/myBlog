@@ -450,6 +450,10 @@
                 textarea{
                     width: calc(100% - 40px);
                 }
+                .messageError{
+                    color: red;
+                    font-size: 24px;
+                }
             }
         }
     }

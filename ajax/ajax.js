@@ -71,3 +71,12 @@ $('#loginBtn').on('click', ()=>{
         },
     })
 })
+$('#sendMessageBtn').on('click', () => {
+    const name = $('#nameMessage').val().replaceAll(' ', '');
+    const number = $('#numberMessage').val().replaceAll(' ', '');
+    const text = $('#textMessage').val();
+
+    if(name.length() < 4 || name.length() > 20){
+        
+    }
+})

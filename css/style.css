@@ -429,4 +429,8 @@
   .footer-form .footer-form-content form textarea {
     width: calc(100% - 40px);
   }
+  .footer-form .footer-form-content form .messageError {
+    color: red;
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */
